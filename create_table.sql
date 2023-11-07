@@ -112,8 +112,11 @@ alter table "product" add column "price" decimal not null
 -- penggunaan ALTER untuk mengganti nama column
 alter table "product" rename column "desc_product" to "description"
 
--- penggunaan ALTER untuk tipe dari column
+-- penggunaan ALTER untuk ganti tipe dari column
 alter table "product" alter column "description" type varchar(255)
+
+-- penggunaan ALTER untuk drop column
+alter table "users" drop column "gender"
 
 -- latihan dengan menggunakan inner join
 select "u"."name", "p"."name", "pr"."code", "o"."qty", "o"."date_order" from "order" "o" 
