@@ -15,6 +15,7 @@ create table if not exists "product"(
 "id" serial primary key,
 "name" varchar (255) not null,
 "images" varchar (255),
+"price" decimal not null,
 "description" text,
 "qty" int not null,
 "status" boolean not null default true,
