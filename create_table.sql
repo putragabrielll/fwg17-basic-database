@@ -118,6 +118,12 @@ alter table "product" alter column "description" type varchar(255)
 -- penggunaan ALTER untuk drop column
 alter table "users" drop column "gender"
 
+-- penggunaan ALTER untuk seting foreign key di suatu column
+alter table order 
+add constraint product_id 
+foreign key (fk_product) 
+references product (id);
+
 -- latihan dengan menggunakan inner join
 select "u"."name", "p"."name", "pr"."code", "o"."qty", "o"."date_order" from "order" "o" 
 inner join "users" "u" on "u"."id" = "o"."user_id" 
