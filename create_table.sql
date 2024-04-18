@@ -61,7 +61,7 @@ INSERT INTO "users"
 VALUES(1, 'gabriel', 'user', '1.jpg', '085155556666', 'Bekasi', 'puragmahk@gmail.com', 'putra123', '2023-11-06 21:18:37.109', NULL);
 
 UPDATE "users"
-SET "name"='gabriel', "level"='user', "images"='', "phone"='0808080089832', "alamat"='Bekasi', "email"='puragmahk@gmail.com', "password"='putra123', "createdAt"='2023-11-06 21:18:37.109', "updatedAt"=NULL
+SET "name"='gabriel', "role"='user', "images"='', "phone"='0808080089832', "alamat"='Bekasi', "email"='puragmahk@gmail.com', "password"='putra123', "createdAt"='2023-11-06 21:18:37.109', "updatedAt"=NULL
 WHERE "id"=1;
 
 DELETE FROM "users" WHERE "id"=1;
